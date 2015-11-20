@@ -112,7 +112,7 @@ firstapp.directive('fullPage', fullPage);
 
         //if we are using a ui-router, we need to be able to handle anchor clicks without 'href="#thing"'
         $(document).on('click', '[data-menuanchor]', function () {
-          $.fn.fullpage.moveTo($(this).attr('data-menuanchor'));
+          $.fn.fullpage.moveTo($(this).attr('data-menuanchor')); 
         });
 
         return options;
@@ -127,5 +127,17 @@ firstapp.directive('fullPage', fullPage);
       scope.$watch('options', rebuild, true);
 
       element.on('$destroy', destroyFullPage);
-    }
+    } 
   }
+//
+//firstapp.directive("minHeight", function($window) {
+//    return function(scope, element, attrs) {
+//        console.log(element);
+//        var minheight = '';
+//        var minheight = $(window).height();
+//        console.log(minheight);
+//        element.css({
+//            "min-height": minheight + "px"
+//        });
+//    };
+//});
