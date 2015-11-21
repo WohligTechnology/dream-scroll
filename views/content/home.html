@@ -90,7 +90,7 @@
                             <span class="icon-bar"></span>
                         </a>
                     </div>
-                    <div class="hideme" ng-show="list">
+                    <div class="hideme {{someclass}}" ng-show="list">
                         <div class="exit" ng-click="menu(false);"><a href=""><i class="fa fa-times"></i></a></div>
                         <ul>
                             <li><a href="">Home</a></li>
@@ -98,6 +98,7 @@
                             <li><a href="">Services Offered</a></li>
                             <li><a href="">Investment Banking</a></li>
                             <li><a href="">About Us</a></li>
+                            <li><a href="">Team</a></li>
                             <li><a href="">Blog</a></li>
                             <li><a href="">News</a></li>
                             <li><a href="">contact us</a></li>
@@ -127,8 +128,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="img-holder">
-                            <img src="img/areas.jpg" alt="" class="img-responsive">
+                        <div class="img-hold-area mg50">
+                            <div class="img1"><img src="img/area-back.png" alt="" class="img-responsive"></div>
+                            <div class="img2"><img src="img/area-front.png" alt="" class="img-responsive"></div>
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -152,7 +154,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="img-holder"><img src="" alt="" class="img-responsive"></div>
+                        <div class="img-holder mg50"><img src="img/laptop.png" alt="" class="img-responsive"></div>
                     </div>
                     <div class="col-md-5">
                         <div class="content">
@@ -171,8 +173,26 @@
         <section id="invest" class="investment">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
-                        <div class="img-holder"><img src="" alt="" class="img-responsive"></div>
+                    <div class="mg50">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="img-holder"><img src="img/invest1.jpg" alt="" class="img-responsive"></div>
+                                    <div class="img-holder"><img src="img/invest5.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="img-holder"><img src="img/invest3.jpg" alt="" class="img-responsive"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="img-holder"><img src="img/invest4.jpg" alt="" class="img-responsive"></div>
+                                        </div>
+                                    </div>
+                                    <div class="img-holder"><img src="img/invest2.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div class="content">
@@ -196,20 +216,19 @@
         </section>
         <section id="about" class="abt bggrey">
             <div class="container">
+                <div class="content">
+                    <h2 class="head">About us</h2>
+                </div>
                 <div class="row">
-                    <div class="col-md-7">
-                        <div class="img-holder"><img src="" alt="" class="img-responsive"></div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="content">
-                            <h2 class="head">About us</h2>
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="abt-info text-center">
                             <p>Dreamz Securities and Broking Services Pvt. Ltd. started its journey by taking a foundation step in Oct 2006 in Business of serving ones need to achieve peace of mind by fulfilling his Future Financial Security by making him invest in Equity Markets, Mutual Fund, Currency Markets and Debt Markets through our systematic investment strategies.</p>
                             <p>Research is our solid foundation on which our advisory service is based. Majority of our strength and revenue is invested in hiring and developing team of analyst to be part of our advisory division. At present we have a team of 5 Research Analyst which are on continu/ous basis involved in research of various companies and asset class. Our research team focuses on companies that have the capacity to offer sustainable long-term business growth The team attempts to research and advise the client to invest in diversified stocks across capitalization, sectors and industries. Team conducts fundamental research and seek to identify under-rated companies, perhaps our research tend to have big, medium and smaller sized companies. We believe these businesses are often under researched, under-owned, undervalued and has the capacity to offer outstanding returns</p>
                         </div>
                     </div>
                 </div>
-                <div class="down-arrow text-center"><a href="#team"><i class="fa fa-angle-down"></i></a></div>
             </div>
+            <div class="down-arrow text-center"><a href="#team"><i class="fa fa-angle-down"></i></a></div>
         </section>
         <section id="team" class="team-mate">
             <div class="container">
@@ -231,7 +250,7 @@
                                 </div>
                             </div>
                             <div class="team-info">
-                                <p class="name">Tushar Sachde</p>
+                                <p class="name">Fik Shunk</p>
                                 <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quia tempore, rem quis iste saepe </p>
                             </div>
                         </div>
@@ -269,7 +288,7 @@
                                 </div>
                             </div>
                             <div class="team-info">
-                                <p class="name">Sohan Honakeri</p>
+                                <p class="name">Larrent Lewis</p>
                                 <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quia tempore, rem quis iste saepe </p>
                             </div>
                         </div>
@@ -288,7 +307,7 @@
                                 </div>
                             </div>
                             <div class="team-info">
-                                <p class="name">Mahesh Maurya</p>
+                                <p class="name">Paul Mitchell</p>
                                 <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quia tempore, rem quis iste saepe </p>
                             </div>
                         </div>
@@ -301,12 +320,39 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="img-holder"><img src="img/blog.jpg" alt="" class="img-responsive"></div>
+                        <div class="mg30 blog-main">
+                            <div class="row">
+                                <div class="col-md-4 nopd">
+                                    <div class="img-holder"><img src="img/blog.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                                <div class="col-md-8 nopd">
+                                    <div class="blog-info">
+                                        <h6>21 june</h6>
+                                        <p class="title">Blog tittle goes here</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quia tempore, rem quis iste saepe</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mg30 blog-main">
+                            <div class="row">
+                                <div class="col-md-8 nopd">
+                                    <div class="blog-info">
+                                        <h6>21 june</h6>
+                                        <p class="title">Blog tittle goes here</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quia tempore, rem quis iste saepe</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 nopd">
+                                    <div class="img-holder"><img src="img/blog.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div class="content">
                             <h2 class="head">Blog</h2>
-                            <p class="imp-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quia tempore, rem quis iste saepe </p>
+                            <p class="imp-txt">Upgrade yourself with our latest news</p>
                             <button type="button" class="page-btn">View More</button>
                         </div>
                     </div>
@@ -318,7 +364,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="img-holder"><img src="img/news.jpg" alt="" class="img-responsive"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="news-img">
+                                    <div class="img-holder"><img src="img/news.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                                   <div class="news-img">
+                                    <div class="img-holder"><img src="img/news1.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="news-img">
+                                    <div class="img-holder"><img src="img/news2.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                                <div class="news-img">
+                                    <div class="img-holder"><img src="img/news3.jpg" alt="" class="img-responsive"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div class="content">
@@ -328,14 +391,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="down-arrow text-center"><a href="#contact"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow text-center"><a href="#rating"><i class="fa fa-angle-down"></i></a></div>
             </div>
+        </section>
+        <section id="rating" class="bggrey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="work mg50">
+                            <ul>
+                                <li>
+                                    <progressbar class="progress rate" value="90"></progressbar>
+                                    <p class="rate-info wd90">Design<span>90%</span></p>
+                                </li>
+                                <li>
+                                    <progressbar class="progress rate" value="85"></progressbar>
+                                    <p class="rate-info wd85">Photoshop<span>85%</span></p>
+                                </li>
+                                <li>
+                                    <progressbar class="progress rate" value="95"> </progressbar>
+                                    <p class="rate-info wd95">Development<span>95%</span></p>
+                                </li>
+                                <li>
+                                    <progressbar class="progress rate" value="80"> </progressbar>
+                                    <p class="rate-info wd80">Photography<span>80%</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="content">
+                            <h2 class="head">Work</h2>
+                            <p class="imp-txt">best of our protfolio</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quia tempore, rem quis iste saepe </p>
+                            <button type="button" class="page-btn">View More</button>
+                        </div>
+                    </div>
+                </div </div>
         </section>
         <section id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="cont">
+                        <div class="cont mg50">
                             <div class="map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937586!2d2.2922926156743895!3d48.858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel+Tower!5e0!3m2!1sen!2sin!4v1448019075992" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
@@ -361,6 +459,7 @@
                         <div class="content">
                             <h2 class="head">contact us</h2>
                             <p class="imp-txt">and send your queries or ask for quote</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, assumenda perspiciatis, adipisci impedit magnam vitae eligendi in explicabo at.</p>
                         </div>
                     </div>
                 </div </div>

@@ -52,6 +52,18 @@ ul {
     @include transform(translate(-50%, -50%));
 }
 
+.img-holder {
+    margin: 10px auto;
+}
+
+.mg30 {
+    margin: 30px 0;
+}
+
+.mg50 {
+    margin: 50px 0;
+}
+
 //header
 header {
     padding: 25px 0;
@@ -72,7 +84,7 @@ header {
         }
         .hideme {
             width: 350px;
-            padding: 60px;
+            padding: 45px;
             position: absolute;
             right: 0;
             top: 0;
@@ -81,17 +93,33 @@ header {
             ul {
                 padding: 0;
                 li {
-                    a {
-                        padding: 20px 10px;
+                    position: relative;
+                    &:after {
+                        content: " ";
+                        width: 0;
+                        height: 1px;
                         display: block;
-                        position: relative;
-                        font-size: 17px;
-                        color: $nav-color;
-                        text-transform: capitalize;
+                        position: absolute;
+                        background: $nav-head;
+                        bottom: 0;
+                        left: 100%;
+                        @include transition(all 800ms linear);
+                    }
+                    &:hover:after {
+                        width: 100%;
+                        left: 0;
+                        @include transition(all 800ms linear)
+                    }
+                    a {
                         border-bottom: 1px solid $nav-color;
+                        padding: 16px 10px;
+                        display: block;
+                        color: $nav-color;
+                        font-size: 17px;
+                        text-align: right;
+                        text-transform: capitalize;
                         &:hover {
                             color: $nav-head;
-                            border-bottom: 1px solid $nav-head;
                             @include transition(all 500ms ease-in-out);
                         }
                     }
@@ -186,29 +214,38 @@ header {
     }
 }
 
-.img-holder {
-    position: relative;
-    height: 400px;
-    img {
-        @extend .fifty;
-        max-height: 100%;
-    }
+.get-in {
+    @include transform(translateX(250px));
+    @include transition(all 800ms ease-in-out); 
+}
+.get-out {
+    @include transform(translateX(0));
+    @include transition(all 800ms ease-in-out);
 }
 
+//.img-holder {
+//    position: relative;
+//    height: 400px;
+//    img {
+//        @extend .fifty;
+//        max-height: 100%;
+//    }
+//}
 button.page-btn {
     border: 1px solid $btn;
     border-radius: 0;
     padding: 5px 15px;
+    margin: 20px 0;
     color: $btn;
     font-size: 16px;
     letter-spacing: 3px;
     background-color: transparent;
     box-shadow: inset 0 0 0 0 $btn;
-    @include transition(all 400ms linear);
+    @include transition(all 600ms linear);
     &:hover {
         color: #fff;
-        box-shadow: inset 200px 0 0 0 $btn;
-        @include transition(all 400ms linear);
+        box-shadow: inset -200px 0 0 0 $btn;
+        @include transition(all 600ms linear);
     }
 }
 
@@ -233,20 +270,22 @@ button.page-btn {
 }
 
 section {
-    padding: 50px 0;
+    padding: 60px 0;
     position: relative;
     min-height: 500px;
     text-align: right;
     .head {
         color: $head-color;
         margin-bottom: 25px;
-        font-size: 55px;
+        font-size: 90px;
         font-family: $pf;
+        line-height: 85px;
         text-transform: capitalize;
     }
     .imp-txt {
-        font-size: 20px;
         margin: 20px 0;
+        font-size: 30px;
+        line-height: 33px;
     }
 }
 
@@ -260,7 +299,7 @@ section {
         color: #fff;
     }
     p {
-        color: #fff; 
+        color: #fff;
     }
 }
 
@@ -294,6 +333,9 @@ section {
             }
         }
     }
+    button.page-btn {
+        margin: 0;
+    }
 }
 
 //team
@@ -325,5 +367,76 @@ section {
                 text-align: center;
             }
         }
+    }
+}
+
+//rating
+.work {
+    li {
+        margin-bottom: 30px;
+    }
+    .progress-bar {
+        background-color: $btn;
+    }
+    .rate {
+        height: 3px;
+        border-radius: 0;
+        margin: 0;
+        overflow: visible;
+    }
+    .rate-info {
+        margin: 10px 0;
+        text-align: left;
+        span {
+            float: right;
+        }
+    }
+    .wd95 {
+        width: 95%;
+    }
+    .wd90 {
+        width: 90%;
+    }
+    .wd85 {
+        width: 85%;
+    }
+    .wd80 {
+        width: 80%;
+    }
+}
+
+//areas
+.img-hold-area {
+    position: relative;
+    height: 400px;
+    &:hover .img1 {
+        @include filter(blur(10px));
+        @include transition(all 800ms linear);
+    }
+    .img1 {
+        @include transition(all 800ms linear);
+    }
+    .img2 {
+        @extend .fifty;
+        @include transition(all 800ms linear)
+    }
+}
+
+//blog
+.blog-info {
+    min-height: 178px;
+    padding: 20px;
+    margin: 10px 0;
+    background: #EFEFEF;
+    color: $head-color;
+    text-align: left;
+    h6 {
+        font-size: 20px;
+    }
+    p {
+        color: inherit;
+    }
+    .title {
+        font-size: 22px;
     }
 }
