@@ -19,7 +19,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.someclass = "get-out";
         else
             $scope.someclass = "get-in";
-        $scope.list = check; 
     };
 })
 

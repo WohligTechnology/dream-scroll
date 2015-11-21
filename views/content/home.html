@@ -13,7 +13,7 @@
                             <span class="icon-bar"></span>
                         </a>
                     </div>
-                    <div class="hideme {{someclass}}" ng-show="list">
+                    <div class="hideme {{someclass}}">
                         <div class="exit" ng-click="menu(false);"><a href=""><i class="fa fa-times"></i></a></div>
                         <ul>
                             <li><a href="">Home</a></li>
@@ -40,12 +40,12 @@
     </header>
     <main>
         <section id="home" class="slider nopd">
-            <flex-slider class="carousel slide" flex-slide="s in slider" animation-loop="true">
+            <flex-slider class="carousel" flex-slide="s in slider" animation="slide" animation-loop="true">
                 <li>
                     <img src="{{s}}" alt="Dreams Banner">
                 </li>
             </flex-slider>
-            <div class="down-arrow text-center"><a href="#areas"><i class="fa fa-angle-down"></i></a></div>
+            <div class="down-arrow text-center"><a href="#areas"><i class="fa fa-angle-down animated bounce"></i></a></div>
         </section>
         <section id="areas">
             <div class="container">
@@ -59,7 +59,7 @@
                     <div class="col-md-5">
                         <div class="content">
                             <h2 class="head">Areas Covered</h2>
-                            <ul>
+                            <ul class="content-menu">
                                 <li><a href="">Equities</a></li>
                                 <li><a href="">Derivatives </a></li>
                                 <li><a href="">Currencies </a></li>
@@ -67,10 +67,11 @@
                                 <li><a href="">Debt Market</a></li>
                                 <li><a href="">Mutual Funds</a></li>
                             </ul>
+                            <button type="button" class="page-btn">View More</button>
                         </div>
                     </div>
                 </div>
-                <div class="down-arrow text-center"><a href="#services"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow text-center"><a href="#services"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
         <section id="services" class="serve bggrey">
@@ -82,15 +83,16 @@
                     <div class="col-md-5">
                         <div class="content">
                             <h2 class="head">Services Covered</h2>
-                            <ul>
+                            <ul class="content-menu">
                                 <li><a href="">Broking</a></li>
                                 <li><a href="">Advisory</a></li>
                                 <li><a href="">Investment Banking</a></li>
                             </ul>
+                            <button type="button" class="page-btn">View More</button>
                         </div>
                     </div>
                 </div>
-                <div class="down-arrow text-center"><a href="#invest"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow text-center"><a href="#invest"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
         <section id="invest" class="investment">
@@ -120,7 +122,7 @@
                     <div class="col-md-5">
                         <div class="content">
                             <h2 class="head">Investment Banking</h2>
-                            <ul>
+                            <ul class="content-menu">
                                 <li>
                                     <a href="">Company Valuations</a>
                                 </li>
@@ -131,6 +133,7 @@
                                     <a href="">Private Placements</a>
                                 </li>
                             </ul>
+                            <button type="button" class="page-btn">View More</button>
                         </div>
                     </div>
                 </div>
@@ -150,8 +153,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="pull-right">
+                    <button type="button" class="page-btn">View More</button>
+                </div>
             </div>
-            <div class="down-arrow text-center"><a href="#team"><i class="fa fa-angle-down"></i></a></div>
+            <div class="down-arrow text-center"><a href="#team"><i class="fa fa-angle-down animated bounce"></i></a></div>
         </section>
         <section id="team" class="team-mate">
             <div class="container">
@@ -236,7 +242,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="down-arrow text-center"><a href="#blog"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow text-center"><a href="#blog"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
         <section id="blog" class="bggrey">
@@ -280,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="down-arrow text-center"><a href="#news"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow text-center"><a href="#news"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
         <section id="news">
@@ -292,7 +298,7 @@
                                 <div class="news-img">
                                     <div class="img-holder"><img src="img/news.jpg" alt="" class="img-responsive"></div>
                                 </div>
-                                   <div class="news-img">
+                                <div class="news-img">
                                     <div class="img-holder"><img src="img/news1.jpg" alt="" class="img-responsive"></div>
                                 </div>
                             </div>
@@ -314,7 +320,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="down-arrow text-center"><a href="#rating"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow text-center"><a href="#rating"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
         <section id="rating" class="bggrey">
@@ -385,7 +391,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, assumenda perspiciatis, adipisci impedit magnam vitae eligendi in explicabo at.</p>
                         </div>
                     </div>
-                </div </div>
+                </div>
         </section>
     </main>
     </div>
