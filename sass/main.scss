@@ -41,6 +41,9 @@ ul {
         list-style-type: none;
     }
 }
+.navbg {
+    background-color: rgba(0, 0, 0, .7);
+}
 .fifty {
     position: absolute;
     top: 50%;
@@ -372,7 +375,7 @@ section {
         .team-img-holder {
             position: relative;
             &:hover img {
-//                opacity: .5;
+                //                opacity: .5;
             }
             &:hover .img-hover {
                 display: block;
@@ -452,7 +455,7 @@ section {
         background-color: #00aced;
     }
     .growth {
-        background-color: $btn; 
+        background-color: $btn;
     }
 }
 //areas
