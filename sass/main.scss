@@ -6,7 +6,6 @@
 @import "../bower_components/fullPage.js/jquery.fullPage.css";
 @import "../bower_components/fontawesome/css/font-awesome.min.css";
 @include font-face("PF", "../fonts/PlayfairDisplay");
-//@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 $pf: "PlayfairDisplay";
 $btn: #e4861f;
 $nav-head: #e4861f;
@@ -18,53 +17,45 @@ img.loading {
     width: 32px !important;
     height: auto;
 }
-
 img {
     opacity: 0;
     //    .transition(all 1s ease);
 }
-
 img.doneLoading {
     opacity: 1;
 }
-
 nav li:hover .dropdown-menu {
     display: block;
 }
-
 h1 {
     color: pink;
 }
-
+a {
+    cursor: pointer;
+}
 a:hover {
     text-decoration: none;
 }
-
 ul {
     li {
         list-style-type: none;
     }
 }
-
 .fifty {
     position: absolute;
     top: 50%;
     left: 50%;
     @include transform(translate(-50%, -50%));
 }
-
 .img-holder {
     margin: 10px auto;
 }
-
 .mg30 {
     margin: 30px 0;
 }
-
 .mg50 {
     margin: 50px 0;
 }
-
 //header
 header {
     padding: 25px 0;
@@ -139,7 +130,6 @@ header {
         }
     }
 }
-
 .social-icon {
     clear: both;
     margin-top: 40px;
@@ -184,7 +174,6 @@ header {
         }
     }
 }
-
 //main 
 .down-arrow {
     position: absolute;
@@ -214,7 +203,6 @@ header {
         }
     }
 }
-
 .content-menu {
     li {
         margin: 7px 0;
@@ -241,17 +229,14 @@ header {
         }
     }
 }
-
 .get-in {
     @include transform(translateX(350px));
     @include transition(all 800ms ease-in-out);
 }
-
 .get-out {
     @include transform(translateX(0));
     @include transition(all 800ms ease-in-out);
 }
-
 //.img-holder {
 //    position: relative;
 //    height: 400px;
@@ -276,8 +261,10 @@ button.page-btn {
         box-shadow: inset -200px 0 0 0 $btn;
         @include transition(all 600ms linear);
     }
+    &:focus {
+        outline: none;
+    }
 }
-
 //slider
 .slider {
     .flexslider {
@@ -309,7 +296,6 @@ button.page-btn {
         @include transform(translate(-50%, 7%));
     }
 }
-
 section {
     padding: 60px 0;
     position: relative;
@@ -329,11 +315,9 @@ section {
         line-height: 33px;
     }
 }
-
 .nopd {
     padding: 0;
 }
-
 .bggrey {
     background: #4b5e62;
     .head {
@@ -348,7 +332,6 @@ section {
         }
     }
 }
-
 //contact
 .cont {
     form {
@@ -383,14 +366,13 @@ section {
         margin: 0;
     }
 }
-
 //team
 .team-mate {
     .team-item {
         .team-img-holder {
             position: relative;
             &:hover img {
-                opacity: .5;
+//                opacity: .5;
             }
             &:hover .img-hover {
                 display: block;
@@ -415,7 +397,6 @@ section {
         }
     }
 }
-
 //rating
 .work {
     li {
@@ -433,24 +414,47 @@ section {
     .rate-info {
         margin: 10px 0;
         text-align: left;
+    }
+    p {
+        text-align: left;
         span {
-            float: right;
+            display: inline-block;
         }
     }
-    .wd95 {
-        width: 95%;
+    .wd15 {
+        width: 15%;
     }
-    .wd90 {
-        width: 90%;
+    .wd20 {
+        width: 20%;
     }
-    .wd85 {
-        width: 85%;
+    .wd25 {
+        width: 25%;
     }
-    .wd80 {
-        width: 80%;
+    .wd30 {
+        width: 30%;
+    }
+    .wd35 {
+        width: 35%;
+    }
+    .wd40 {
+        width: 40%;
+    }
+    .wd45 {
+        width: 45%;
+    }
+    .wd50 {
+        width: 50%;
+    }
+    .to {
+        background-color: #3b5998;
+    }
+    .from {
+        background-color: #00aced;
+    }
+    .growth {
+        background-color: $btn; 
     }
 }
-
 //areas
 .img-hold-area {
     position: relative;
@@ -467,7 +471,6 @@ section {
         @include transition(all 800ms linear)
     }
 }
-
 //blog
 .blog-info {
     min-height: 178px;
@@ -486,7 +489,6 @@ section {
         font-size: 22px;
     }
 }
-
 .animated {
     -webkit-animation-duration: 800ms;
     animation-duration: 800ms;
@@ -497,7 +499,6 @@ section {
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes bounce {
     0%,
     20%,
@@ -513,7 +514,6 @@ section {
         -webkit-transform: translateY(-5px);
     }
 }
-
 @keyframes bounce {
     0%,
     20%,
@@ -529,7 +529,6 @@ section {
         transform: translateY(-5px);
     }
 }
-
 .bounce {
     -webkit-animation-name: bounce;
     animation-name: bounce;

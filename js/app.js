@@ -3,7 +3,7 @@ var firstapp = angular.module('firstapp', [
     'ui.router',
     'phonecatControllers',
     'templateservicemod',
-    'navigationservice'
+    'navigationservice' 
 ]);
 
 firstapp.config(function($stateProvider, $urlRouterProvider,$httpProvider) {
