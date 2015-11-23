@@ -25,7 +25,7 @@ var ftpdetails = {
     host: 'wohlig.co.in',
     user: 'enter your username',
     pass: 'enter your password',
-    remotePath: "public_html/fynx"
+    remotePath: "public_html/dreamz"
 };
 
 //Do not change anything below

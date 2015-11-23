@@ -1,4 +1,4 @@
-<div class="dream">
+<div id="fullpage" fullPage>
     <header>
         <div class="container">
             <div class="pull-left logo">
@@ -6,7 +6,7 @@
             </div>
             <div class="pull-right">
                 <nav>
-                    <div class="hamburger" ng-click="menu(true);">
+                    <div class="hamburger" ng-click="menu('get-out');">
                         <a href="">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -14,7 +14,7 @@
                         </a>
                     </div>
                     <div class="hideme {{someclass}}">
-                        <div class="exit" ng-click="menu(false);"><a href=""><i class="fa fa-times"></i></a></div>
+                        <div class="exit" ng-click="menu('get-in');"><a href=""><i class="fa fa-times"></i></a></div>
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="">Areas Covered</a></li>
@@ -39,7 +39,7 @@
         </div>
     </header>
     <main>
-        <section id="home" class="slider nopd">
+        <section id="home" class="slider nopd slide">
             <flex-slider class="carousel" flex-slide="s in slider" animation="slide" animation-loop="true">
                 <li>
                     <img src="{{s}}" alt="Dreams Banner">
@@ -47,7 +47,7 @@
             </flex-slider>
             <div class="down-arrow text-center"><a href="#areas"><i class="fa fa-angle-down animated bounce"></i></a></div>
         </section>
-        <section id="areas">
+        <section id="areas" class="slide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -74,7 +74,7 @@
                 <div class="down-arrow text-center"><a href="#services"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
-        <section id="services" class="serve bggrey">
+        <section id="services" class="serve bggrey slide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -95,7 +95,7 @@
                 <div class="down-arrow text-center"><a href="#invest"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
-        <section id="invest" class="investment">
+        <section id="invest" class="investment slide">
             <div class="container">
                 <div class="row">
                     <div class="mg50">
@@ -140,7 +140,7 @@
                 <div class="down-arrow text-center"><a href="#about"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
-        <section id="about" class="abt bggrey">
+        <section id="about" class="abt bggrey slide">
             <div class="container">
                 <div class="content">
                     <h2 class="head">About us</h2>
@@ -159,7 +159,7 @@
             </div>
             <div class="down-arrow text-center"><a href="#team"><i class="fa fa-angle-down animated bounce"></i></a></div>
         </section>
-        <section id="team" class="team-mate">
+        <section id="team" class="team-mate slide">
             <div class="container">
                 <div class="content">
                     <h2 class="head">Team</h2>
@@ -245,7 +245,7 @@
                 <div class="down-arrow text-center"><a href="#blog"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
-        <section id="blog" class="bggrey">
+        <section id="blog" class="bggrey slide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -323,7 +323,7 @@
                 <div class="down-arrow text-center"><a href="#rating"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
-        <section id="rating" class="bggrey">
+        <section id="rating" class="bggrey slide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -358,7 +358,7 @@
                     </div>
                 </div </div>
         </section>
-        <section id="contact">
+        <section id="contact slide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">

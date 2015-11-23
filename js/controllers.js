@@ -13,12 +13,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     "img/banner/3.jpg"
   ];
     $scope.someclass = "get-in";
-    $scope.list = false;
     $scope.menu = function (check) {
-        if (check == true)
-            $scope.someclass = "get-out";
-        else
-            $scope.someclass = "get-in";
+        $scope.someclass = check;
     };
 })
 
