@@ -1,10 +1,17 @@
-<div id="fullpage" fullPage>
+<div id="fullpage">
     <header>
         <div class="container">
             <div class="pull-left logo">
-                <a href=""><img src="img/logo.png" alt="" class="img-responsive"></a>
+                <a href="#/home"><img src="img/logo.png" alt="" class="img-responsive"></a>
             </div>
             <div class="pull-right">
+                <div class="social-icon head-icons">
+                    <ul>
+                        <li><a href="" class="fb" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="" class="twi" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="" class="you" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
                 <nav>
                     <div class="hamburger" ng-click="menu('get-out');">
                         <a href="">
@@ -28,18 +35,11 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="social-icon">
-                    <ul>
-                        <li><a href="" class="fb" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="" class="twi" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="" class="you" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </header>
-    <main>
-        <section id="home" class="slider nopd slide">
+    <main fullPage>
+        <section id="home" class="slider nopd slide section">
             <flex-slider class="carousel" flex-slide="s in slider" animation="slide" animation-loop="true">
                 <li>
                     <img src="{{s}}" alt="Dreams Banner">
@@ -47,7 +47,7 @@
             </flex-slider>
             <div class="down-arrow text-center"><a href="#areas"><i class="fa fa-angle-down animated bounce"></i></a></div>
         </section>
-        <section id="areas" class="slide">
+        <section id="areas" class="slide section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -74,7 +74,7 @@
                 <div class="down-arrow text-center"><a href="#services"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
-        <section id="services" class="serve bggrey slide">
+        <section id="services" class="serve bggrey slide section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -95,7 +95,7 @@
                 <div class="down-arrow text-center"><a href="#invest"><i class="fa fa-angle-down animated bounce"></i></a></div>
             </div>
         </section>
-        <section id="invest" class="investment slide">
+        <section id="invest" class="investment slide section">
             <div class="container">
                 <div class="row">
                     <div class="mg50">
@@ -168,7 +168,7 @@
                     <div class="col-md-3">
                         <div class="team-item">
                             <div class="team-img-holder"><img src="img/team/1.jpg" alt="" class="img-circle img-responsive">
-<!--
+                                <!--
                                 <div class="img-hover">
                                     <div class="social-icon">
                                         <ul>
@@ -189,7 +189,7 @@
                     <div class="col-md-3">
                         <div class="team-item">
                             <div class="team-img-holder"><img src="img/team/2.jpg" alt="" class="img-circle img-responsive">
-<!--
+                                <!--
                                 <div class="img-hover">
                                     <div class="social-icon">
                                         <ul>
@@ -210,7 +210,7 @@
                     <div class="col-md-3">
                         <div class="team-item">
                             <div class="team-img-holder"><img src="img/team/3.jpg" alt="" class="img-circle img-responsive">
-<!--
+                                <!--
                                 <div class="img-hover">
                                     <div class="social-icon">
                                         <ul>
@@ -231,7 +231,7 @@
                     <div class="col-md-3">
                         <div class="team-item">
                             <div class="team-img-holder"><img src="img/team/4.jpg" alt="" class="img-circle img-responsive">
-<!--
+                                <!--
                                 <div class="img-hover">
                                     <div class="social-icon">
                                         <ul>
@@ -290,7 +290,7 @@
                         <div class="content">
                             <h2 class="head">Blog</h2>
                             <p class="imp-txt">Upgrade yourself with our latest news</p>
-                            <button type="button" class="page-btn">View More</button>
+                           <a href="#/blog"> <button type="button" class="page-btn">View More</button></a>
                         </div>
                     </div>
                 </div>
@@ -338,24 +338,40 @@
                         <div class="work mg50">
                             <ul>
                                 <li>
-                                   <p><span class="wd25">To</span><span class="wd50">From</span><span class="wd25">Growth Rate</span></p>
-                                   
-                                    <progress class="progress rate" ><bar class="to" value="25"></bar><bar class="from" value="50"></bar><bar class="growth" value="25"></bar></progress>
+                                    <p><span class="wd25">To</span><span class="wd50">From</span><span class="wd25">Growth Rate</span></p>
+
+                                    <progress class="progress rate">
+                                        <bar class="to" value="25"></bar>
+                                        <bar class="from" value="50"></bar>
+                                        <bar class="growth" value="25"></bar>
+                                    </progress>
                                     <p class="rate-info">Reliance</p>
                                 </li>
                                 <li>
-                                   <p><span class="wd15">To</span><span class="wd45">From</span><span class="wd40">Growth Rate</span></p>
-                                    <progress class="progress rate"><bar class="to" value="15"></bar><bar class="from" value="45"></bar><bar class="growth" value="40"></bar></progress>                                    
+                                    <p><span class="wd15">To</span><span class="wd45">From</span><span class="wd40">Growth Rate</span></p>
+                                    <progress class="progress rate">
+                                        <bar class="to" value="15"></bar>
+                                        <bar class="from" value="45"></bar>
+                                        <bar class="growth" value="40"></bar>
+                                    </progress>
                                     <p class="rate-info wd85">Reliance</p>
                                 </li>
                                 <li>
-                                   <p><span class="wd20">To</span><span class="wd50">From</span><span class="wd30">Growth Rate</span></p>
-                                    <progress class="progress rate" ><bar class="to" value="20"></bar><bar class="from" value="50"></bar><bar class="growth" value="30"></bar> </progress>
+                                    <p><span class="wd20">To</span><span class="wd50">From</span><span class="wd30">Growth Rate</span></p>
+                                    <progress class="progress rate">
+                                        <bar class="to" value="20"></bar>
+                                        <bar class="from" value="50"></bar>
+                                        <bar class="growth" value="30"></bar>
+                                    </progress>
                                     <p class="rate-info wd95">Reliance</p>
                                 </li>
                                 <li>
-                                   <p><span class="wd50">To</span><span class="wd25">From</span><span class="wd25">Growth Rate</span></p>
-                                    <progress class="progress rate"><bar class="to" value="50"></bar><bar class="from" value="25"></bar><bar class="growth" value="25"></bar> </progress>
+                                    <p><span class="wd50">To</span><span class="wd25">From</span><span class="wd25">Growth Rate</span></p>
+                                    <progress class="progress rate">
+                                        <bar class="to" value="50"></bar>
+                                        <bar class="from" value="25"></bar>
+                                        <bar class="growth" value="25"></bar>
+                                    </progress>
                                     <p class="rate-info wd80">Reliance</p>
                                 </li>
                             </ul>

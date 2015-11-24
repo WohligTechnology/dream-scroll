@@ -16,10 +16,43 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menu = function (check) {
         $scope.someclass = check;
     };
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 300) {
+            $("header").addClass("get-white");
+        }
+        if (scroll == 0) {
+            $("header").removeClass("get-white");
+        }
+    });
+    
+    
+    
 })
 
-.controller('FeatureCtrl', function ($scope, TemplateService) {
-        $scope.template = TemplateService;
+.controller('BlogCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("blog");
+        $scope.menutitle = NavigationService.makeactive("Blog");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+    
+        $scope.someclass = "get-in";
+        $scope.menu = function (check) {
+            $scope.someclass = check;
+        };
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 300) {
+                $("header").addClass("get-white");
+            }
+            if (scroll == 0) {
+                $("header").removeClass("get-white");
+            }
+        });
     })
     .controller('headerctrl', function ($scope, TemplateService) {
         $scope.template = TemplateService;
